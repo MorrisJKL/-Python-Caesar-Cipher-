@@ -13,20 +13,21 @@
 情境說明：
 很多人會把 Google、Discord 或遊戲帳號的密碼記在電腦的 password.txt 裡面，但這很容易被借用電腦的朋友一覽無遺。我們可以透過凱薩密碼，將密碼轉換成一堆亂碼。雖然擋不住專業駭客，但可以有效防止身邊朋友的「不小心偷瞄」。
 
-```py
-my_google_pass = "IamMorrisJKL001342"
-key_scene1 = 13
-safe_storage = caesar_cipher(my_google_pass, key_scene1, 'encrypt')
-print(f"儲存於文字檔的加密密碼: {safe_storage}")
-print(f"當我要登入 Google 時還原: {caesar_cipher(safe_storage, key_scene1, 'decrypt')}\n")
-```
+<img width="702" height="162" alt="image" src="https://github.com/user-attachments/assets/1a2d4b9f-fd6f-4b61-add0-6e37cb200499" />
+
 
 
 ### 場景二：社群軟體上的「防暴雷（Spoiler）機制」
 情境說明：
 在社群平台（如 Discord 或 Thread 討論區）分享最新電影的劇情時，為了不讓還沒看過的人被暴雷，可以用金鑰 5 加密。想看的人只要複製密碼、貼進解密工具就能觀看。
+```py
+movie_spoiler = "Do you know Morris marry the guy who steal Ellan's bag at the end of the movie!"
+key_scene2 = 5
 
-<img width="702" height="162" alt="image" src="https://github.com/user-attachments/assets/1a2d4b9f-fd6f-4b61-add0-6e37cb200499" />
+post_on_forum = caesar_cipher(movie_spoiler, key_scene2, 'encrypt')
+print(f"發布在討論區的貼文: {post_on_forum}")
+print(f"讀者點擊「顯示暴雷內容」後解密: {caesar_cipher(post_on_forum, key_scene2, 'decrypt')}\n")
+```
 
 
 ### 場景三：獨立遊戲開發的「關卡彩蛋與解答隱藏」
