@@ -60,7 +60,7 @@ print(f"讀者點擊「顯示暴雷內容」後解密: {caesar_cipher(post_on_fo
 ```py
 encrypted_answer = "Xoqbu" 
 key_scene3 = 22
-player_input = input("【遊戲關卡】請輸入通關密碼（請輸入 Bingo 試試看）：")
+player_input = input("請輸入通關密碼（請輸入 Bingo 試試看）：")
 if caesar_cipher(player_input, key_scene3, 'encrypt') == encrypted_answer:
     print("恭喜通關！解鎖隱藏彩蛋！")
 else:
