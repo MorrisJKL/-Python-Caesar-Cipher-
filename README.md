@@ -29,15 +29,10 @@
 ### 場景三：獨立遊戲開發的「關卡彩蛋與解答隱藏」
 情境說明：
 我用 Python 寫了一款解謎遊戲，遊戲的「通關密碼」或說「隱藏彩蛋」直接寫在程式碼裡，只要打開原始碼（原始碼流出）就會直接看到答案。我使用凱薩密碼，可以將答案混淆，讓玩家自行看 code 破解的難度。
-```py
-encrypted_answer = "Xoqbu" 
-key_scene3 = 22
-player_input = input("請輸入通關密碼（請輸入 Bingo 試試看）：")
-if caesar_cipher(player_input, key_scene3, 'encrypt') == encrypted_answer:
-    print("恭喜通關！解鎖隱藏彩蛋！")
-else:
-    print("密碼錯誤，再試一次！")
-```
+
+<img width="573" height="200" alt="image" src="https://github.com/user-attachments/assets/df4b7cf2-f876-4721-aad1-9ce3ff70fe06" />
+
+
 
 ## 3. 心得
 
