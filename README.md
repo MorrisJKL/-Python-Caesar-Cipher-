@@ -29,7 +29,7 @@ def caesar_cipher(text, shift, mode='encrypt'):
 
 # 測試核心功能
 secret_key = 7
-test_text = "Hello, AIS3 Junior 2026!"
+test_text = "Hello, I'm MorrisJKL!"
 encrypted = caesar_cipher(test_text, secret_key, 'encrypt')
 decrypted = caesar_cipher(encrypted, secret_key, 'decrypt')
 
