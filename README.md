@@ -58,7 +58,6 @@ print(f"讀者點擊「顯示暴雷內容」後解密: {caesar_cipher(post_on_fo
 情境說明：
 我用 Python 寫了一款解謎遊戲，遊戲的「通關密碼」或說「隱藏彩蛋」直接寫在程式碼裡，只要打開原始碼（原始碼流出）就會直接看到答案。我使用凱薩密碼，可以將答案混淆，讓玩家自行看 code 破解的難度。
 ```py
-# 玩家需要輸入對應的通關密碼
 encrypted_answer = "Xoqbu" 
 key_scene3 = 22
 player_input = input("【遊戲關卡】請輸入通關密碼（請輸入 Bingo 試試看）：")
