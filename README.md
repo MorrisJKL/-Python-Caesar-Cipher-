@@ -101,3 +101,8 @@ else:
 
 ## 學習資料:
 
+1. 凱薩密碼/加密/解密【一起學習 麥塊破解方法。 方程島兒童程式學苑（2025)。
+https://www.youtube.com/watch?v=jzaL8pEFmGU
+2. 一起學加密(3)——Python實現凱薩加密。 麦兜搞IT (2022)。
+https://www.youtube.com/watch?v=EUhI0-v2Ps0
+
