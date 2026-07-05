@@ -2,28 +2,8 @@
 
 ## 1. 核心程式碼實作
 這個程式支援英文大小寫加密與解密，並會自動忽略數字、空格與中文字（保持原樣），非常適合用來處理日常文字。
+<img width="685" height="447" alt="image" src="https://github.com/user-attachments/assets/fdd2de2a-6c0d-4c5b-b2ab-abfa9c97529c" />
 
-```py
-def caesar_cipher(text, shift, mode='encrypt'):
-    result = ""
-    if mode == 'decrypt':
-        shift = -shift
-    for char in text:
-        if char.isalpha(): 
-            start = ord('A') if char.isupper() else ord('a')
-            new_char = chr((ord(char) - start + shift) % 26 + start)
-            result += new_char
-        else:
-            result += char
-    return result
-secret_key = 7
-test_text = "Hello, I'm MorrisJKL!"
-encrypted = caesar_cipher(test_text, secret_key, 'encrypt')
-decrypted = caesar_cipher(encrypted, secret_key, 'decrypt')
-print(f"原始文字: {test_text}")
-print(f"加密結果: {encrypted}")
-print(f"解密結果: {decrypted}")
-```
 
 ## 2. 實例運用場景
 我設計了三個不同的應用情境，並直接用 Python 模擬出來：
