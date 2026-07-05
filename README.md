@@ -1,5 +1,7 @@
 # 基於 Python 之多元生活場景凱薩密碼（Caesar Cipher）應用實作
 
+Colab: https://colab.research.google.com/drive/1dU0a1L3OruK6w_DC34jtihzZBhlR_eRG?usp=sharing
+
 ## 1. 核心程式碼實作
 這個程式支援英文大小寫加密與解密，並會自動忽略數字、空格與中文字（保持原樣），非常適合用來處理日常文字。
 
