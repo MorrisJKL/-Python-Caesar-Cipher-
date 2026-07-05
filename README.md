@@ -2,6 +2,7 @@
 
 ## 1. 核心程式碼實作
 這個程式支援英文大小寫加密與解密，並會自動忽略數字、空格與中文字（保持原樣），非常適合用來處理日常文字。
+
 <img width="685" height="447" alt="image" src="https://github.com/user-attachments/assets/fdd2de2a-6c0d-4c5b-b2ab-abfa9c97529c" />
 
 
@@ -25,14 +26,8 @@ print(f"當我要登入 Google 時還原: {caesar_cipher(safe_storage, key_scene
 情境說明：
 在社群平台（如 Discord 或 Thread 討論區）分享最新電影的劇情時，為了不讓還沒看過的人被暴雷，可以用金鑰 5 加密。想看的人只要複製密碼、貼進解密工具就能觀看。
 
-```py
-movie_spoiler = "Do you know Morris marry the guy who steal Ellan's bag at the end of the movie!"
-key_scene2 = 5
+<img width="702" height="162" alt="image" src="https://github.com/user-attachments/assets/1a2d4b9f-fd6f-4b61-add0-6e37cb200499" />
 
-post_on_forum = caesar_cipher(movie_spoiler, key_scene2, 'encrypt')
-print(f"發布在討論區的貼文: {post_on_forum}")
-print(f"讀者點擊「顯示暴雷內容」後解密: {caesar_cipher(post_on_forum, key_scene2, 'decrypt')}\n")
-```
 
 ### 場景三：獨立遊戲開發的「關卡彩蛋與解答隱藏」
 情境說明：
