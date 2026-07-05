@@ -1,4 +1,3 @@
-```py
 def caesar_cipher(text, shift, mode='encrypt'):
     result = ""
     if mode == 'decrypt':
@@ -18,4 +17,4 @@ decrypted = caesar_cipher(encrypted, secret_key, 'decrypt')
 print(f"原始文字: {test_text}")
 print(f"加密結果: {encrypted}")
 print(f"解密結果: {decrypted}")
-```
+
